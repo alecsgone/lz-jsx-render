@@ -1,5 +1,6 @@
 import dom from 'jsx-render'
+import './style.<%= preprocessor %>'
 
 const app = document.querySelector('.app')
 
-app.appendChild(<h2><%= appName %>App Start Here!</h2>)
+app.appendChild(<p><%= appName %>App Start Here!</p>)

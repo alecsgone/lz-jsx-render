@@ -22,8 +22,12 @@ module.exports = {
        use: { loader: 'babel-loader' }
      },
      {
-       test: /\.pug/,
+       test: /\.pug$/,
        use: { loader: 'pug-loader' }
+     },
+     {
+       test: /\.<%= preprocessor %>$/,
+       use: ['style-loader', 'css-loader', '<%= ( preprocessor === "scss" ) ? "sass" : "stylus" %>-loader']
      },
     ]
   },
