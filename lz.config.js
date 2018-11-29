@@ -6,5 +6,9 @@ module.exports = {
       message: 'What is your app name?',
       default: 'Sample JSX'
     },
+  ],
+  postScripts: [
+    'npm install',
+    'git init'
   ]
 }
